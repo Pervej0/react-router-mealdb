@@ -18,7 +18,7 @@ const Foods = (props) => {
         {!meals ? (
           <NotFound></NotFound>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid:cols-4 gap-4 mx-2 md:mx-12 my-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-2 md:mx-12 my-5">
             {meals.map((item) => (
               <Food meals={item} key={item.idMeal}></Food>
             ))}
