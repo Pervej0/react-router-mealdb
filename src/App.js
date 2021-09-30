@@ -4,6 +4,7 @@ import Main from "./Components/Main/Main";
 import Header from "./Components/Header/Header";
 import Home from "./Components/Main/Home/Home";
 import FoodDetails from "./Components/Main/Food/FoodDetails/FoodDetails";
+import NotFound from "./Components/NotFound/NotFound";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/" component={Home}></Route>
           <Route exact path="/foods" component={Main}></Route>
           <Route path="/food/:foodId" component={FoodDetails}></Route>
+          <Route path="*" component={NotFound}></Route>
         </Switch>
       </Router>
     </>

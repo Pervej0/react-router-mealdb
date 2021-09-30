@@ -10,11 +10,11 @@ const Main = () => {
     setInputText(event.target.value);
   };
   const searchClick = () => {
-    if (!searcheValue) {
+    /*     if (!searcheValue) {
       alert("Please enter valid food name.");
       setInputText("");
       return;
-    }
+    } */
     setSearcheValue(inputText);
     setInputText("");
   };
@@ -22,7 +22,7 @@ const Main = () => {
     <>
       <section>
         <div className="banner">
-          <div className="w-1/3 mx-auto flex items-center py-5 h-48">
+          <div className="w-10/12 md:w-1/3 mx-auto flex items-center py-5 h-48">
             <input
               onChange={handleSearch}
               type="text"
